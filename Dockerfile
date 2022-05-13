@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && \
     apt upgrade -y && \
     apt install -y git libstdc++6 lib32stdc++6 openssl curl && \
-    apt install -y python3.9 && \
+    apt install -y python3 && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && \
     apt install -y nodejs && \
     useradd -d /home/container -m container
