@@ -8,7 +8,7 @@
     "author": "service@hcgcloud.com",
     "description": "Just Cause 3 Multiplayer Linux",
     "image": "hcgcloud\/pterodactyl-jc3mp:latest",
-    "startup": ".\/start.sh && .\/Server",
+    "startup": "python3 .\/install_package.py && .\/Server",
     "config": {
         "files": "{\r\n    \"config.json\": {\r\n        \"parser\": \"json\",\r\n        \"find\": {\r\n            \"bind\": \"0.0.0.0\",\r\n            \"port\": \"{{server.build.default.port}}\",\r\n            \"queryPort\": \"{{server.build.env.QUERY_PORT}}\",\r\n            \"httpPort\": \"{{server.build.env.HTTP_PORT}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Server successfully started up\",\r\n    \"userInteraction\": []\r\n}",
