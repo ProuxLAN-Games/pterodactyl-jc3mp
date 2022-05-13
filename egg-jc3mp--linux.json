@@ -1,11 +1,11 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
     "meta": {
-        "version": "PTDL_v1"
+        "version": "v0.1"
     },
     "exported_at": "2019-12-08T22:32:56+08:00",
     "name": "JC3MP-Linux",
-    "author": "service@hcgcloud.com",
+    "author": "mproux@proux.onl",
     "description": "Just Cause 3 Multiplayer Linux",
     "image": "ghcr.io/prouxlan-games/pterodactyl-jc3mp:latest",
     "startup": "python3 .\/install_package.py && .\/Server",
